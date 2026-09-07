@@ -15,7 +15,7 @@
 
 | | **A. 단일 HTML** | **B. Streamlit** |
 |---|---|---|
-| 파일 | `청렴나침반.html` | `app.py` |
+| 파일 | `index.html` | `app.py` |
 | 실행 | 더블클릭 | 서버 구동 |
 | 설치물 | **없음** | Python + streamlit |
 | 용도 | 시연·회람·의사결정용 | 실제 서비스 |
@@ -30,8 +30,8 @@
 | 파일 | 역할 |
 |---|---|
 | `cases.json` | 사례 데이터 — **담당자가 직접 수정하는 곳 (단일 출처)** |
-| `build_html.py` | `cases.json` → `청렴나침반.html` 생성기 |
-| `청렴나침반.html` | **[A]** 생성 결과물. 의존성 0 · 외부 통신 0 |
+| `build_html.py` | `cases.json` → `index.html` 생성기 |
+| `index.html` | **[A]** 생성 결과물. 의존성 0 · 외부 통신 0 |
 | `app.py` | **[B]** 화면 + 검색 엔진 (단일 파일) |
 | `.streamlit/config.toml` | **[B]** 폐쇄망 기본 설정(텔레메트리 차단 등) |
 | `Dockerfile` / `run_offline.sh` | **[B]** 반입·배포용 |
@@ -47,7 +47,9 @@
 python build_html.py     # cases.json 수정 후 다시 실행하면 반영됨
 ```
 
-생성된 `청렴나침반.html`을 더블클릭하면 끝입니다. 인터넷·서버·파이썬 모두 불필요.
+생성된 `index.html`을 더블클릭하면 끝입니다. 인터넷·서버·파이썬 모두 불필요.
+
+브라우저에서 바로 열어보려면: <https://kepcokn5701.github.io/integrity/>
 
 **B. Streamlit**
 

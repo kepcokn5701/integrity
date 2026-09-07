@@ -2,7 +2,8 @@
 #  청렴 나침반 — 인터랙티브 청렴 사례집
 #  cases.json → 단일 HTML 파일 생성기
 #  실행법: python build_html.py
-#  결과물: 청렴나침반.html  (의존성 0 · 더블클릭 실행 · 외부 통신 없음)
+#  결과물: index.html  (의존성 0 · 더블클릭 실행 · 외부 통신 없음)
+#          GitHub Pages 루트 주소로 바로 열리도록 index.html 로 둔다.
 # ==============================================================
 
 import io
@@ -11,7 +12,7 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_PATH = os.path.join(BASE_DIR, "cases.json")
-OUT_PATH = os.path.join(BASE_DIR, "청렴나침반.html")
+OUT_PATH = os.path.join(BASE_DIR, "index.html")
 
 APP_NAME = "청렴 나침반"
 APP_SUBTITLE = "인터랙티브 청렴 사례집"
