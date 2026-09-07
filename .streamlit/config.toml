@@ -1,0 +1,10 @@
+# 폐쇄망 기본 설정 — 외부 통신 요소 전부 차단
+[browser]
+gatherUsageStats = false
+
+[server]
+headless = true
+port = 8502
+
+[global]
+showWarningOnDirectExecution = false
